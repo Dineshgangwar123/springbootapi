@@ -7,10 +7,12 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
-public class HardcodedService {
+public class HardcodedService 
+{
 
 	private static List<Todo> todos = new ArrayList();
 	private static long id = 0;
+	public int a;
 
 	static {
 		todos.add(new Todo(++id,"dinesh","working",new Date(), false) );
